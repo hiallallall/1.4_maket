@@ -79,6 +79,7 @@ p{
 .mobile-menu > p:hover{
     color: rgba(126, 126, 130, 1);
     transition: color 0.5s;
+    
 }
 
 img.mobile-menu_button-hover:hover{
@@ -89,13 +90,14 @@ img.mobile-menu_button-hover:hover{
 }
 
 .mobile-menu > p:hover::before{
-    content: "";
+    content: '';
     width:4px;
     height: 40px;
-    position:absolute;
-    left:0;
-    background-image:url(assets/img/highlight.svg);
-    transform:translateY(-6.5px)
+    position: absolute;
+    left: 0;
+    background: url('assets\img\highlight.svg');
+    transform: translateY(-6.5px);
+    z-index: -1;
 }
 
 .mobile-menu > p:last-child{
